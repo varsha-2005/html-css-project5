@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL - Booking & Contacts</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="top">
+        <div class="head">
+            <nav class="nav">
+                </a><span class="nav-item" id="#home">
+                 <button>
+                  <a href="index.html">
+                    HOME
+                  </a>
+                 </button> 
+                </span>
+                <span class="nav-item">TERMS AND CONDITION</span>
+                <span class="nav-item">ROOMS</span>
+                <span class="nav-item">RESTAURANT</span>
+                <span class="nav-item">NEWS</span>
+            </nav>
+        </div>
+    </div>
+    <div class="booking-form">
+        <h2 class="booking">BOOKING & CONTACTS</h2>
+        <hr>
+        <form action="#" method="post">
+            <p><input type="text" id="name" name="full_name" placeholder="NAME" class="input-field"></p>
+            <p><input type="email" id="email" name="email" placeholder="EMAIL" class="input-field"></p>
+            <p><input type="tel" id="phone" name="phone" placeholder="PHONE" class="input-field"></p>
+            <p><input type="text" id="street" name="street" placeholder="STREET" class="input-field"></p>
+            <p><input type="text" id="number" name="number" placeholder="NUMBER" class="input-field"></p>
+            <p><input type="text" id="city" name="city" placeholder="CITY" class="input-field"></p>
+            <p><input type="text" id="postcode" name="post_code" placeholder="POST CODE" class="input-field"></p>
+            <p><input type="text" id="country" name="country" placeholder="COUNTRY" class="input-field"></p>
+            <div class="controls">
+                <input type="date" id="arrive" name="arrive">
+                <label for="arrive" class="label-date">Arrive</label>
+            </div>
+            <div class="controls1">
+                <input type="date" id="depart" name="depart">
+                <label for="depart" class="label-date">Depart</label>
+            </div>
+            <div class="people">
+                <select name="people">
+                    <option value="0">PEOPLE</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="room">
+                <select name="room">
+                    <option value="0">ROOM</option>
+                    <option value="1">With Bathroom</option>
+                    <option value="2">Without Bathroom</option>
+                </select>
+            </div>
+            <div class="bedding">
+                <select name="bedding">
+                    <option value="0">BEDDING</option>
+                    <option value="1">Zweibett</option>
+                    <option value="2">Doppelbett</option>
+                </select>
+            </div>
+            <div class="comment">
+                <p class="com">Please add your valuable comments</p>
+                <p><input type="text" id="comments" name="comments" placeholder="COMMENTS" class="input-field"></p>
+            </div>
+            <button type="submit" class="btn"><a href="index1.html">SUBMIT</a></button>
+        </form>
+    </div>
+</body>
+</html>

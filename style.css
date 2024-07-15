@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.top {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #444;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: rgb(225, 235, 39);
+}
+
+.bt {
+    /* background-color: transparent; */
+    border: 2px solid #fff;
+    color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.center {
+    position: relative;
+    text-align: center;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.h1 {
+    font-size: 3.5rem;
+    margin: 0.5rem 0;
+}
+
+.para {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.booking-form {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: calc(100% - 1.4rem);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.controls, .people, .room, .bedding, .comment {
+    margin: 1rem 0;
+}
+
+.controls label, .people label, .room label, .bedding label, .comment label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #901e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+#home{
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .middle {
+        top: 40%;
+    }
+
+    .h1 {
+        font-size: 2.5rem;
+    }
+
+    .para {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 0.5rem 0;
+    }
+
+    .nav-item {
+        margin: 0.3rem 0;
+    }
+
+    .middle {
+        top: 30%;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    .input-field {
+        width: calc(100% - 1rem);
+    }
+}
